@@ -13,6 +13,9 @@ public class Array {
 		String[] arr4 = new String[10];
 		// 참조형 변수의 기본값 : null
 		
+		// 순서 :    1  2  3  4  5
+		// index :  0  1  2  3  4
+		// arr1  : {0, 0, 0, 0, 0}
 		arr1[0] = 1;
 		System.out.println("arr1[0]: " + arr1[0]);
 		arr1[2] = 5;

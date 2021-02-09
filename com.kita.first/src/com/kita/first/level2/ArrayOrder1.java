@@ -20,5 +20,16 @@ public class ArrayOrder1 {
 		for(int i=0; i<arr.length; i++) { 
 			System.out.print(arr[i] + ", ");
 		}
+		System.out.println();
+		
+		// forEach문 사용하서 배열 안의 값 출력
+		for(int val : arr) {
+			System.out.print(val + ", ");
+		}
+		
+		
+		
+		
+		
 	}
 }
