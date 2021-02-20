@@ -32,12 +32,22 @@ public class Practice11 {
 		String[] menuArr = {"콜라", "사이다", "캔커피", "데자와", "환타", "웰치스"};
 		int[] priceArr = {900, 700, 400, 500, 600, 1000};
 		
+		System.out.println("--메뉴--");
+		for(int i=0; i<menuArr.length; i++) {
+			System.out.printf("%d. %s %d원\n", i+1, menuArr[i], priceArr[i]);
+		}
+		System.out.println();
+		
 		while(true) {
 			System.out.print("메뉴를 입력하세요: (종료:0) ");
 			num = sc.nextInt();
-			if(num == 0) {
+			if(num < 0 || num > menuArr.length) {
+				System.out.println("범위 내의 값을 입력해주세요.");
+				continue;
+			} else if(num == 0) {
 				break;
-			}
+			} 
+			
 			switch(num) {
 			case 1:
 				System.out.printf("%s %d원\n", menuArr[0], priceArr[0]);
